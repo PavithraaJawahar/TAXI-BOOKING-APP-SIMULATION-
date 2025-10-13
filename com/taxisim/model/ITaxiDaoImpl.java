@@ -11,11 +11,11 @@ import java.util.Optional;
 
 public class ITaxiDaoImpl implements ITaxiDao {
     private final Logger log = Logger.getInstance();
-
+    private DBconfig con;
     @Override
     public Taxi save(Taxi t) throws Exception {
         String sql = "INSERT INTO taxis(taxi_code, driver_name, location_x, location_y, status, earnings) VALUES (?, ?, ?, ?, ?, ?)";
-        try (Connection c = DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, t.getTaxiId());
             ps.setString(2, t.getDriverName());
@@ -36,7 +36,7 @@ public class ITaxiDaoImpl implements ITaxiDao {
     @Override
     public Optional<Taxi> findById(String taxiCode) throws Exception {
         String sql = "SELECT taxi_code, driver_name, location_x, location_y, status, earnings FROM taxis WHERE taxi_code=?";
-        try (Connection c = DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, taxiCode);
             try (ResultSet rs = ps.executeQuery()) {
@@ -59,7 +59,7 @@ public class ITaxiDaoImpl implements ITaxiDao {
     public List<Taxi> findAll() throws Exception {
         String sql = "SELECT taxi_code, driver_name, location_x, location_y, status, earnings FROM taxis";
         List<Taxi> res = new ArrayList<>();
-        try (Connection c = DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
             while (rs.next()) {
@@ -81,7 +81,7 @@ public class ITaxiDaoImpl implements ITaxiDao {
     public List<Taxi> findAvailable() throws Exception {
         String sql = "SELECT taxi_code, driver_name, location_x, location_y, status, earnings FROM taxis WHERE status='AVAILABLE'";
         List<Taxi> res = new ArrayList<>();
-        try (Connection c = DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
             while (rs.next()) {
@@ -99,7 +99,7 @@ public class ITaxiDaoImpl implements ITaxiDao {
     @Override
     public void updateStatusAndLocation(String taxiCode, String status, int x, int y) throws Exception {
         String sql = "UPDATE taxis SET status=?, location_x=?, location_y=? WHERE taxi_code=?";
-        try (Connection c = DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, status);
             ps.setInt(2, x);
@@ -113,7 +113,7 @@ public class ITaxiDaoImpl implements ITaxiDao {
     @Override
     public void addEarnings(String taxiCode, double amount) throws Exception {
         String sql = "UPDATE taxis SET earnings = COALESCE(earnings,0) + ? WHERE taxi_code=?";
-        try (Connection c = DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setDouble(1, amount);
             ps.setString(2, taxiCode);
