@@ -10,7 +10,7 @@ public class DBconfig {
     public static String pwd="password";
 
 
-    public static Connection getConnection() throws SQLException
+    public static Connection getConnection(String url,String user,String pwd) throws SQLException
     {
         return DriverManager.getConnection(url,user,pwd);
     }
