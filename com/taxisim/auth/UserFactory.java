@@ -8,10 +8,10 @@ import java.sql.*;
 
 public class UserFactory {
     private final Logger log = Logger.getInstance();
-
+    private DBconfig con;
     public User login(String username, String password) throws Exception {
         String sql = "SELECT role FROM users WHERE username=? AND password=?";
-        try (Connection c = DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, username); ps.setString(2, password);
             try (ResultSet rs = ps.executeQuery()) {
