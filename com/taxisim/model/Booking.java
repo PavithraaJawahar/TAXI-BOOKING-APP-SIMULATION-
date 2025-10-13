@@ -13,7 +13,7 @@ public class Booking {
     private BookingStatus status;
 
     private List<BookingObserver> observers = new ArrayList<>();
-
+    private BookingLoggerObserver Blo;
     public interface BookingObserver {
         void onStatusChange(Booking b, BookingStatus oldStatus, BookingStatus newStatus);
     }
@@ -21,18 +21,24 @@ public class Booking {
     public Booking(Builder b) {
         this.bookingId = b.bookingId;
         this.riderName = b.riderName;
-        this.pickupX = b.pickupX; this.pickupY = b.pickupY;
-        this.dropX = b.dropX; this.dropY = b.dropY;
+        this.pickupX = b.pickupX;
+        this.pickupY = b.pickupY;
+        this.dropX = b.dropX;
+        this.dropY = b.dropY;
         this.requestedTime = b.requestedTime;
         this.status = b.status;
     }
-
+    public void addObserver(BookingObserver o) {
+        observers.add(o);
+    }
 
 
     private void notifyObservers(BookingStatus oldS, BookingStatus newS) {
+
         if (observers == null) return;
         for (BookingObserver o : observers) {
-            try { o.onStatusChange(this, oldS, newS); } catch (Exception ex) {  }
+            try { o.onStatusChange(this, oldS, newS);
+                  } catch (Exception ex) {  }
         }
     }
 
@@ -40,6 +46,7 @@ public class Booking {
         BookingStatus old = this.status;
         this.status = newStatus;
         notifyObservers(old, newStatus);
+
     }
 
 
@@ -52,7 +59,7 @@ public class Booking {
     public LocalDateTime getRequestedTime() { return requestedTime; }
     public String getAssignedTaxiId() { return assignedTaxiId; }
     public BookingStatus getStatus() { return status; }
-    public void setAssignedTaxiCode(String c) { this.assignedTaxiId = c; }
+    public void setAssignedTaxiId(String c) { this.assignedTaxiId = c; }
 
     @Override
     public String toString() {
