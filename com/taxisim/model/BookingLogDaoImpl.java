@@ -4,6 +4,7 @@ import com.taxisim.config.DBconfig;
 import com.taxisim.util.Logger;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.time.LocalDateTime;
@@ -12,11 +13,11 @@ import java.util.List;
 
 public class BookingLogDaoImpl implements BookingLogDao {
     private final Logger log = Logger.getInstance();
-
+    private DBconfig con;
     @Override
     public void logBooking(Booking booking) throws Exception {
         String sql = "INSERT INTO bookings_log(booking_code, rider_name, taxi_code, status, requested_time, completed_time) VALUES (?, ?, ?, ?, ?, ?)";
-        try (Connection c = java.sql.DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql)) {
 
             ps.setString(1, booking.getBookingId());
@@ -38,7 +39,7 @@ public class BookingLogDaoImpl implements BookingLogDao {
         List<Booking> bookings = new ArrayList<>();
         String sql = "SELECT booking_code, rider_name, taxi_code, status, requested_time FROM bookings_log";
 
-        try (Connection c = java.sql.DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
 
@@ -70,7 +71,7 @@ public class BookingLogDaoImpl implements BookingLogDao {
 
     public Booking getBooking(String bookingCode) {
         String sql = "SELECT booking_code, rider_name, taxi_code, status, requested_time FROM bookings_log WHERE booking_code = ?";
-        try (Connection c = java.sql.DriverManager.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
+        try (Connection c = con.getConnection(DBconfig.url, DBconfig.user, DBconfig.pwd);
              PreparedStatement ps = c.prepareStatement(sql)) {
 
             ps.setString(1, bookingCode);
