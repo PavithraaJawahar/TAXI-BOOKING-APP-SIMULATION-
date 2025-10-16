@@ -1,0 +1,333 @@
+[INFO] 1760255798603 - Application starting
+[INFO] 1760255798620 - Thread pool created with 17 threads
+[INFO] 1760255939914 - Application starting
+[INFO] 1760255939928 - Thread pool created with 17 threads
+[INFO] 1760256093418 - Application starting
+[INFO] 1760256093436 - Thread pool created with 17 threads
+[INFO] 1760256104033 - User rider1 authenticated as RIDER
+[INFO] 1760256123557 - Logged method: bookNow tag=bookNow
+[INFO] 1760256123557 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760256123566 - Observer: Booking B54806abe changed PENDING->ONGOING
+[INFO] 1760256123566 - [DAO-Proxy] updateStatusAndLocation TX003
+[INFO] 1760256123574 - Updated taxi TX003 status=ON_TRIP loc=(4,7)
+[INFO] 1760256123575 - Trip started for booking B54806abe taxi=TX003
+[INFO] 1760256201551 - User driver1 authenticated as DRIVER
+[INFO] 1760256204686 - [DAO-Proxy] findAll taxis
+[INFO] 1760256227881 - User admin1 authenticated as ADMIN
+[INFO] 1760256232390 - [DAO-Proxy] findAll taxis
+[INFO] 1760256244077 - [DAO-Proxy] addEarnings TX003 amount=1225.0
+[INFO] 1760256244087 - Added earnings 1225.0 to taxi TX003
+[INFO] 1760256244088 - [DAO-Proxy] updateStatusAndLocation TX003
+[INFO] 1760256244092 - Updated taxi TX003 status=AVAILABLE loc=(97,13)
+[INFO] 1760256244092 - Observer: Booking B54806abe changed ONGOING->COMPLETED
+[INFO] 1760256244093 - Trip completed B54806abe taxi=TX003 fare=1225.0
+[INFO] 1760256248822 - [DAO-Proxy] save called for TAXI-25bd0afd
+[INFO] 1760256248831 - Inserted taxi TAXI-25bd0afd
+[INFO] 1760256325765 - [DAO-Proxy] findAll taxis
+[INFO] 1760257084680 - Application starting
+[INFO] 1760257084696 - Thread pool created with 17 threads
+[INFO] 1760257094768 - User rider1 authenticated as RIDER
+[INFO] 1760257102821 - Logged method: bookNow tag=bookNow
+[INFO] 1760257102821 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760257102830 - Observer: Booking Bd8e66896 changed PENDING->ONGOING
+[INFO] 1760257102830 - [DAO-Proxy] updateStatusAndLocation TAXI-25bd0afd
+[INFO] 1760257102840 - Updated taxi TAXI-25bd0afd status=ON_TRIP loc=(97,13)
+[INFO] 1760257102840 - Trip started for booking Bd8e66896 taxi=TAXI-25bd0afd
+[INFO] 1760257103842 - [DAO-Proxy] addEarnings TAXI-25bd0afd amount=30.0
+[INFO] 1760257103848 - Added earnings 30.0 to taxi TAXI-25bd0afd
+[INFO] 1760257103849 - [DAO-Proxy] updateStatusAndLocation TAXI-25bd0afd
+[INFO] 1760257103853 - Updated taxi TAXI-25bd0afd status=AVAILABLE loc=(98,14)
+[INFO] 1760257103853 - Observer: Booking Bd8e66896 changed ONGOING->COMPLETED
+[ERROR] 1760257103862 - Failed to log booking Bd8e66896
+[INFO] 1760257103863 - Trip completed Bd8e66896 taxi=TAXI-25bd0afd fare=30.0
+[INFO] 1760257148728 - User admin1 authenticated as ADMIN
+[INFO] 1760257158320 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760257265591 - Application starting
+[INFO] 1760257265607 - Thread pool created with 17 threads
+[INFO] 1760257274154 - User rider1 authenticated as RIDER
+[INFO] 1760257278412 - Logged method: bookNow tag=bookNow
+[INFO] 1760257278412 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760257278421 - Observer: Booking B6a50e6fe changed PENDING->ONGOING
+[INFO] 1760257278421 - [DAO-Proxy] updateStatusAndLocation TX002
+[INFO] 1760257278429 - Updated taxi TX002 status=ON_TRIP loc=(6,1)
+[INFO] 1760257278430 - Trip started for booking B6a50e6fe taxi=TX002
+[INFO] 1760257330932 - [DAO-Proxy] addEarnings TX002 amount=545.0
+[INFO] 1760257330940 - Added earnings 545.0 to taxi TX002
+[INFO] 1760257330941 - [DAO-Proxy] updateStatusAndLocation TX002
+[INFO] 1760257330945 - Updated taxi TX002 status=AVAILABLE loc=(98,14)
+[INFO] 1760257330945 - Observer: Booking B6a50e6fe changed ONGOING->COMPLETED
+[INFO] 1760257330950 - Logged booking B6a50e6fe to bookings_log table.
+[INFO] 1760257330951 - Trip completed B6a50e6fe taxi=TX002 fare=545.0
+[INFO] 1760257510600 - Application starting
+[INFO] 1760257510620 - Thread pool created with 17 threads
+[INFO] 1760257519048 - User rider1 authenticated as RIDER
+[INFO] 1760257523109 - Logged method: bookNow tag=bookNow
+[INFO] 1760257523109 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760257523119 - Observer: Booking B7e3f00d1 changed PENDING->ONGOING
+[INFO] 1760257523119 - [DAO-Proxy] updateStatusAndLocation TAXI-25bd0afd
+[INFO] 1760257523129 - Updated taxi TAXI-25bd0afd status=ON_TRIP loc=(98,14)
+[INFO] 1760257523130 - Trip started for booking B7e3f00d1 taxi=TAXI-25bd0afd
+[INFO] 1760257525131 - [DAO-Proxy] addEarnings TAXI-25bd0afd amount=40.0
+[INFO] 1760257525137 - Added earnings 40.0 to taxi TAXI-25bd0afd
+[INFO] 1760257525138 - [DAO-Proxy] updateStatusAndLocation TAXI-25bd0afd
+[INFO] 1760257525142 - Updated taxi TAXI-25bd0afd status=AVAILABLE loc=(98,14)
+[INFO] 1760257525142 - Observer: Booking B7e3f00d1 changed ONGOING->COMPLETED
+[INFO] 1760257525148 - Logged booking B7e3f00d1 to bookings_log table.
+[INFO] 1760257525149 - Trip completed B7e3f00d1 taxi=TAXI-25bd0afd fare=40.0
+[INFO] 1760267985638 - Application starting
+[INFO] 1760267985658 - Thread pool created with 17 threads
+[INFO] 1760267997262 - User rider1 authenticated as RIDER
+[INFO] 1760268003953 - Logged method: bookNow tag=bookNow
+[INFO] 1760268003953 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760268003963 - Observer: Booking Booking B-1 changed PENDING->ONGOING
+[INFO] 1760268003963 - [DAO-Proxy] updateStatusAndLocation TAXI-25bd0afd
+[INFO] 1760268003976 - Updated taxi TAXI-25bd0afd status=ON_TRIP loc=(98,14)
+[INFO] 1760268003977 - Booking added: Booking[Booking B-1,rider1,pick=(97,0),drop=(98,0),2025-10-12T16:50:03.951106188,taxi=TAXI-25bd0afd,status=ONGOING]
+[INFO] 1760268003977 - Trip started for booking Booking B-1 taxi=TAXI-25bd0afd
+[INFO] 1760268011979 - [DAO-Proxy] addEarnings TAXI-25bd0afd amount=100.0
+[INFO] 1760268011989 - Added earnings 100.0 to taxi TAXI-25bd0afd
+[INFO] 1760268011989 - [DAO-Proxy] updateStatusAndLocation TAXI-25bd0afd
+[INFO] 1760268011993 - Updated taxi TAXI-25bd0afd status=AVAILABLE loc=(98,0)
+[INFO] 1760268011993 - Observer: Booking Booking B-1 changed ONGOING->COMPLETED
+[INFO] 1760268011998 - Logged booking Booking B-1 to bookings_log table.
+[INFO] 1760268011999 - Trip completed Booking B-1 taxi=TAXI-25bd0afd fare=100.0
+[INFO] 1760268047147 - User driver1 authenticated as DRIVER
+[INFO] 1760268052290 - [DAO-Proxy] findAll taxis
+[WARN] 1760268213468 - Failed login attempt: driver2
+[WARN] 1760268213468 - InvalidLoginException created for user=driver2 msg=Invalid credentials
+[INFO] 1760268213468 - Handling InvalidLoginException for user=driver2
+[ERROR] 1760268213468 - Error in role menu
+[INFO] 1760268247055 - Thread pool shutdown called
+[INFO] 1760268247055 - Application exiting
+[INFO] 1760268374087 - Application starting
+[INFO] 1760268374105 - Thread pool created with 17 threads
+[INFO] 1760268382130 - User driver2 authenticated as DRIVER
+[INFO] 1760268384298 - [DAO-Proxy] findAll taxis
+[INFO] 1760268639750 - Thread pool shutdown called
+[INFO] 1760268639750 - Application exiting
+[INFO] 1760268644467 - Application starting
+[INFO] 1760268644485 - Thread pool created with 17 threads
+[INFO] 1760268652891 - User driver2 authenticated as DRIVER
+[INFO] 1760268684079 - User rider1 authenticated as RIDER
+[INFO] 1760268882339 - User admin1 authenticated as ADMIN
+[INFO] 1760268934619 - User rider1 authenticated as RIDER
+[INFO] 1760268938947 - Logged method: bookNow tag=bookNow
+[INFO] 1760268938947 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760268938956 - Observer: Booking Booking B-1 changed PENDING->ONGOING
+[INFO] 1760268938957 - [DAO-Proxy] updateStatusAndLocation TAXI-25bd0afd
+[INFO] 1760268938966 - Updated taxi TAXI-25bd0afd status=ON_TRIP loc=(98,0)
+[INFO] 1760268938967 - Booking added: Booking[Booking B-1,rider1,pick=(97,0),drop=(98,0),2025-10-12T17:05:38.945544337,taxi=TAXI-25bd0afd,status=ONGOING]
+[INFO] 1760268938967 - Trip started for booking Booking B-1 taxi=TAXI-25bd0afd
+[INFO] 1760268939969 - [DAO-Proxy] addEarnings TAXI-25bd0afd amount=30.0
+[INFO] 1760268939977 - Added earnings 30.0 to taxi TAXI-25bd0afd
+[INFO] 1760268939977 - [DAO-Proxy] updateStatusAndLocation TAXI-25bd0afd
+[INFO] 1760268939982 - Updated taxi TAXI-25bd0afd status=AVAILABLE loc=(98,0)
+[INFO] 1760268939982 - Observer: Booking Booking B-1 changed ONGOING->COMPLETED
+[INFO] 1760268939987 - Logged booking Booking B-1 to bookings_log table.
+[INFO] 1760268939988 - Trip completed Booking B-1 taxi=TAXI-25bd0afd fare=30.0
+[INFO] 1760268973056 - User admin1 authenticated as ADMIN
+[INFO] 1760268977021 - [DAO-Proxy] findAll taxis
+[INFO] 1760268981644 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760269140329 - User driver1 authenticated as DRIVER
+[INFO] 1760269226131 - Application starting
+[INFO] 1760269226148 - Thread pool created with 17 threads
+[INFO] 1760269236241 - User admin1 authenticated as ADMIN
+[INFO] 1760270051737 - Application starting
+[INFO] 1760270051755 - Thread pool created with 17 threads
+[INFO] 1760270062083 - User admin1 authenticated as ADMIN
+[INFO] 1760270072903 - [DAO-Proxy] findAll taxis
+[INFO] 1760270076776 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760270127336 - [DAO-Proxy] findById TX001
+[INFO] 1760270149307 - User rider1 authenticated as RIDER
+[INFO] 1760270156726 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760270156734 - [DAO-Proxy] updateStatusAndLocation TX001
+[INFO] 1760270156745 - Updated taxi TX001 status=ON_TRIP loc=(2,3)
+[INFO] 1760270156746 - Trip started for booking Booking B-1 taxi=TX001
+[INFO] 1760270168247 - [DAO-Proxy] addEarnings TX001 amount=135.0
+[INFO] 1760270168256 - Added earnings 135.0 to taxi TX001
+[INFO] 1760270168256 - [DAO-Proxy] updateStatusAndLocation TX001
+[INFO] 1760270168261 - Updated taxi TX001 status=AVAILABLE loc=(3,1)
+[INFO] 1760270168265 - Logged booking Booking B-1 to bookings_log table.
+[INFO] 1760270168267 - Trip completed Booking B-1 taxi=TX001 fare=135.0
+[INFO] 1760270203930 - Application starting
+[INFO] 1760270203947 - Thread pool created with 17 threads
+[INFO] 1760270210549 - User driver1 authenticated as DRIVER
+[INFO] 1760270212851 - [DAO-Proxy] findAll taxis
+[INFO] 1760270214922 - [DAO-Proxy] findAll taxis
+[INFO] 1760270384440 - Application starting
+[INFO] 1760270384458 - Thread pool created with 17 threads
+[INFO] 1760270396340 - User admin1 authenticated as ADMIN
+[INFO] 1760270403798 - [DAO-Proxy] save called for TAXI-61867159
+[INFO] 1760270403806 - Inserted taxi TAXI-61867159
+[INFO] 1760270408044 - [DAO-Proxy] findAll taxis
+[INFO] 1760270414136 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760270440492 - [DAO-Proxy] findById TX003
+[INFO] 1760270451721 - User rider1 authenticated as RIDER
+[INFO] 1760270457754 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760270457762 - [DAO-Proxy] updateStatusAndLocation TAXI-61867159
+[INFO] 1760270457772 - Updated taxi TAXI-61867159 status=ON_TRIP loc=(7,1)
+[INFO] 1760270457773 - Trip started for booking Bd57e74b1 taxi=TAXI-61867159
+[INFO] 1760270463275 - [DAO-Proxy] addEarnings TAXI-61867159 amount=75.0
+[INFO] 1760270463284 - Added earnings 75.0 to taxi TAXI-61867159
+[INFO] 1760270463284 - [DAO-Proxy] updateStatusAndLocation TAXI-61867159
+[INFO] 1760270463288 - Updated taxi TAXI-61867159 status=AVAILABLE loc=(18,1)
+[INFO] 1760270463293 - Logged booking Bd57e74b1 to bookings_log table.
+[INFO] 1760270463296 - Trip completed Bd57e74b1 taxi=TAXI-61867159 fare=75.0
+[INFO] 1760270488214 - User driver2 authenticated as DRIVER
+[INFO] 1760270489755 - [DAO-Proxy] findAll taxis
+[INFO] 1760270492140 - [DAO-Proxy] findAll taxis
+[INFO] 1760270506561 - Thread pool shutdown called
+[INFO] 1760270506562 - Application exiting
+[INFO] 1760332819804 - Application starting
+[INFO] 1760332819818 - Thread pool created with 17 threads
+[INFO] 1760332830303 - User admin1 authenticated as ADMIN
+[INFO] 1760332833972 - [DAO-Proxy] findAll taxis
+[INFO] 1760332839403 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760332867940 - [DAO-Proxy] findById TX002
+[INFO] 1760335620242 - User rider1 authenticated as RIDER
+[INFO] 1760335624228 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760335624235 - [DAO-Proxy] updateStatusAndLocation TAXI-61867159
+[INFO] 1760335624245 - Updated taxi TAXI-61867159 status=ON_TRIP loc=(18,1)
+[INFO] 1760335624246 - Trip started for booking Bbb16460c taxi=TAXI-61867159
+[INFO] 1760335629248 - [DAO-Proxy] addEarnings TAXI-61867159 amount=70.0
+[INFO] 1760335629257 - Added earnings 70.0 to taxi TAXI-61867159
+[INFO] 1760335629257 - [DAO-Proxy] updateStatusAndLocation TAXI-61867159
+[INFO] 1760335629262 - Updated taxi TAXI-61867159 status=AVAILABLE loc=(8,1)
+[INFO] 1760335629268 - Logged booking Bbb16460c to bookings_log table.
+[INFO] 1760335629270 - Trip completed Bbb16460c taxi=TAXI-61867159 fare=70.0
+[INFO] 1760336012489 - Application starting
+[INFO] 1760336012505 - Thread pool created with 17 threads
+[INFO] 1760336021647 - User rider1 authenticated as RIDER
+[INFO] 1760336025823 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760336025830 - [DAO-Proxy] updateStatusAndLocation TX001
+[INFO] 1760336025841 - Updated taxi TX001 status=ON_TRIP loc=(3,1)
+[INFO] 1760336025842 - Trip started for booking B6a4669d4 taxi=TX001
+[INFO] 1760336028344 - [DAO-Proxy] addEarnings TX001 amount=45.0
+[INFO] 1760336028354 - Added earnings 45.0 to taxi TX001
+[INFO] 1760336028354 - [DAO-Proxy] updateStatusAndLocation TX001
+[INFO] 1760336028359 - Updated taxi TX001 status=AVAILABLE loc=(2,1)
+[INFO] 1760336028364 - Logged booking B6a4669d4 to bookings_log table.
+[INFO] 1760336028365 - Trip completed B6a4669d4 taxi=TX001 fare=45.0
+[INFO] 1760336231571 - Thread pool shutdown called
+[INFO] 1760336231571 - Application exiting
+[INFO] 1760336235259 - Application starting
+[INFO] 1760336235275 - Thread pool created with 17 threads
+[INFO] 1760336244390 - User rider1 authenticated as RIDER
+[INFO] 1760336250674 - [DAO-Proxy] findAvailable taxis
+[WARN] 1760336250682 - Booking failed: Cannot invoke "com.taxisim.model.BookingLoggerObserver.onStatusChange(com.taxisim.model.Booking, com.taxisim.model.BookingStatus, com.taxisim.model.BookingStatus)" because "this.Blo" is null
+[INFO] 1760336294230 - Application starting
+[INFO] 1760336294245 - Thread pool created with 17 threads
+[INFO] 1760336302219 - User rider1 authenticated as RIDER
+[INFO] 1760336306457 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760336306465 - [DAO-Proxy] updateStatusAndLocation TAXI-61867159
+[INFO] 1760336306476 - Updated taxi TAXI-61867159 status=ON_TRIP loc=(8,1)
+[INFO] 1760336306476 - Trip started for booking B3bcf7df9 taxi=TAXI-61867159
+[INFO] 1760336309479 - [DAO-Proxy] addEarnings TAXI-61867159 amount=50.0
+[INFO] 1760336309488 - Added earnings 50.0 to taxi TAXI-61867159
+[INFO] 1760336309488 - [DAO-Proxy] updateStatusAndLocation TAXI-61867159
+[INFO] 1760336309493 - Updated taxi TAXI-61867159 status=AVAILABLE loc=(4,1)
+[INFO] 1760336309498 - Logged booking B3bcf7df9 to bookings_log table.
+[INFO] 1760336309500 - Trip completed B3bcf7df9 taxi=TAXI-61867159 fare=50.0
+[INFO] 1760336363790 - Application starting
+[INFO] 1760336363810 - Thread pool created with 17 threads
+[INFO] 1760336371360 - User rider1 authenticated as RIDER
+[INFO] 1760336375423 - [DAO-Proxy] findAvailable taxis
+[WARN] 1760336375430 - Booking failed: Cannot invoke "com.taxisim.model.BookingLoggerObserver.onStatusChange(com.taxisim.model.Booking, com.taxisim.model.BookingStatus, com.taxisim.model.BookingStatus)" because "this.Blo" is null
+[INFO] 1760338122319 - Application starting
+[INFO] 1760338122335 - Thread pool created with 17 threads
+[INFO] 1760338130869 - User rider1 authenticated as RIDER
+[INFO] 1760338139484 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760338139493 - Booking B4e4672b5 changed from PENDING to ONGOING
+[INFO] 1760338139493 - [DAO-Proxy] updateStatusAndLocation TX001
+[INFO] 1760338139504 - Updated taxi TX001 status=ON_TRIP loc=(2,1)
+[INFO] 1760338139504 - Trip started for booking B4e4672b5 taxi=TX001
+[INFO] 1760338146507 - [DAO-Proxy] addEarnings TX001 amount=90.0
+[INFO] 1760338146518 - Added earnings 90.0 to taxi TX001
+[INFO] 1760338146518 - [DAO-Proxy] updateStatusAndLocation TX001
+[INFO] 1760338146522 - Updated taxi TX001 status=AVAILABLE loc=(14,1)
+[INFO] 1760338146522 - Booking B4e4672b5 changed from ONGOING to COMPLETED
+[INFO] 1760338146527 - Logged booking B4e4672b5 to bookings_log table.
+[INFO] 1760338146528 - Trip completed B4e4672b5 taxi=TX001 fare=90.0
+[WARN] 1760348833437 - Login failed: No line found
+[INFO] 1760514925569 - Application starting
+[INFO] 1760514925582 - Thread pool created with 17 threads
+[INFO] 1760514925592 - Thread pool created with 6 threads
+[ERROR] 1760514978967 - Could not create ConfigManager instance
+[WARN] 1760514978967 - Login failed: Cannot invoke "com.taxisim.config.Manager.ConfigManager.get(String)" because the return value of "com.taxisim.config.Manager.ConfigManager.getInstance()" is null
+[INFO] 1760515310437 - Application starting
+[INFO] 1760515310452 - Thread pool created with 17 threads
+[INFO] 1760515310462 - Thread pool created with 6 threads
+[ERROR] 1760515339641 - Failed to load dbconfig.properties: dbconfig.properties not found in classpath. Please place it under src/main/resources/
+[WARN] 1760515339641 - Login failed: Could not create ConfigManager instance: dbconfig.properties not found in classpath. Please place it under src/main/resources/
+[INFO] 1760519176526 - Application starting
+[INFO] 1760519176543 - Thread pool created with 17 threads
+[INFO] 1760519176552 - Thread pool created with 6 threads
+[INFO] 1760519186245 - ConfigManager loaded successfully from /com/taxisim/config/resources/
+[INFO] 1760519186348 - User rider1 authenticated as RIDER
+[INFO] 1760519192409 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760519192414 - Booking Bdede0b0c notifying 2 drivers...
+[INFO] 1760519192830 - Taxi TAXI-001 declined or missed booking Bdede0b0c
+[INFO] 1760519193866 - Taxi TAXI-003 accepted booking Bdede0b0c
+[WARN] 1760519195415 - No driver accepted booking Bdede0b0c
+[INFO] 1760519195415 - Booking Bdede0b0c: status changed from PENDING to FAILED
+[INFO] 1760519195417 - Booking Bdede0b0c updated to status FAILED in bookings_log
+[INFO] 1760519577115 - Application starting
+[INFO] 1760519577131 - Thread pool created with 17 threads
+[INFO] 1760519577140 - Thread pool created with 6 threads
+[INFO] 1760519586368 - ConfigManager loaded successfully from /com/taxisim/config/resources/
+[INFO] 1760519586464 - User rider1 authenticated as RIDER
+[INFO] 1760519590140 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760519590144 - Booking B55447b64 notifying 2 drivers...
+[INFO] 1760519590964 - Taxi TAXI-003 accepted booking B55447b64
+[INFO] 1760519590997 - Taxi TAXI-001 declined or missed booking B55447b64
+[INFO] 1760519590997 - Booking B55447b64 accepted by Taxi TAXI-003
+[INFO] 1760519590997 - Booking B55447b64: status changed from PENDING to ONGOING
+[INFO] 1760519590999 - Booking B55447b64 updated to status ONGOING in bookings_log
+[INFO] 1760519590999 - [DAO-Proxy] updateStatusAndLocation TAXI-003
+[INFO] 1760519591004 - Taxi updated: TAXI-003 status=ON_TRIP
+[INFO] 1760519591005 - Trip started for booking B55447b64 | Taxi=TAXI-003
+[INFO] 1760519664324 - User admin1 authenticated as ADMIN
+[INFO] 1760519672328 - [DAO-Proxy] save called for TAXI-5d3c30ce
+[INFO] 1760519681128 - [DAO-Proxy] findAll taxis
+[INFO] 1760519683668 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760519688507 - [DAO-Proxy] addEarnings TAXI-003 amount=4850.0
+[INFO] 1760519688513 - Added earnings 4850.0 to TAXI-003
+[INFO] 1760519688513 - [DAO-Proxy] updateStatusAndLocation TAXI-003
+[INFO] 1760519688514 - Taxi updated: TAXI-003 status=AVAILABLE
+[INFO] 1760519688514 - Booking B55447b64: status changed from ONGOING to COMPLETED
+[INFO] 1760519688515 - Booking B55447b64 updated to status COMPLETED in bookings_log
+[ERROR] 1760519688520 - Trip simulation failed for B55447b64: ERROR: null value in column "completed_time" violates not-null constraint
+  Detail: Failing row contains (11, B55447b64, rider1, TAXI-003, COMPLETED, 2025-10-15 14:43:10.140504, null).
+[INFO] 1760519688520 - Booking B55447b64: status changed from COMPLETED to FAILED
+[INFO] 1760519746513 - [DAO-Proxy] findById TAXI-003
+[INFO] 1760520034856 - Application starting
+[INFO] 1760520034872 - Thread pool created with 17 threads
+[INFO] 1760520034881 - Thread pool created with 6 threads
+[INFO] 1760520045244 - ConfigManager loaded successfully from /com/taxisim/config/resources/
+[INFO] 1760520045337 - User admin1 authenticated as ADMIN
+[INFO] 1760520239846 - Thread pool shutdown called
+[INFO] 1760520239847 - Application exiting
+[INFO] 1760521366565 - Application starting
+[INFO] 1760521366580 - Thread pool created with 17 threads
+[INFO] 1760521366589 - Thread pool created with 6 threads
+[INFO] 1760521376054 - ConfigManager loaded successfully from /com/taxisim/config/resources/
+[INFO] 1760521376148 - User rider1 authenticated as RIDER
+[INFO] 1760521380935 - [DAO-Proxy] findAvailable taxis
+[INFO] 1760521380942 - Booking B070c859d notifying 2 drivers
+[INFO] 1760521382452 - Taxi TAXI-003 accepted booking B070c859d
+[INFO] 1760521382802 - Taxi TAXI-001 declined or missed booking B070c859d
+[INFO] 1760521382802 - Booking B070c859d accepted by Taxi TAXI-003
+[INFO] 1760521382802 - Booking B070c859d: status changed from PENDING to ONGOING
+[INFO] 1760521382804 - Booking B070c859d updated to status ONGOING in bookings_log
+[INFO] 1760521382804 - [DAO-Proxy] updateStatusAndLocation TAXI-003
+[INFO] 1760521382809 - Taxi updated: TAXI-003 status=ON_TRIP
+[INFO] 1760521382810 - Trip started for booking B070c859d | Taxi=TAXI-003
+[INFO] 1760521479812 - [DAO-Proxy] addEarnings TAXI-003 amount=4750.0
+[INFO] 1760521479818 - Added earnings 4750.0 to TAXI-003
+[INFO] 1760521479818 - [DAO-Proxy] updateStatusAndLocation TAXI-003
+[INFO] 1760521479820 - Taxi updated: TAXI-003 status=AVAILABLE
+[INFO] 1760521479820 - Booking B070c859d: status changed from ONGOING to COMPLETED
+[INFO] 1760521479821 - Booking B070c859d updated to status COMPLETED in bookings_log
+[ERROR] 1760521479826 - Trip simulation failed for B070c859d: ERROR: null value in column "completed_time" violates not-null constraint
+  Detail: Failing row contains (12, B070c859d, rider1, TAXI-003, COMPLETED, 2025-10-15 15:13:00.935835, null).
+[INFO] 1760521479826 - Booking B070c859d: status changed from COMPLETED to FAILED
